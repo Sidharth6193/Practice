@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+    body{
+        padding: 0px;
+        margin: 0px;
+        background-color: powderblue;
+    }
+    #main{
+        display: grid;
+        grid-template-areas: 
+        "a a"
+        "b c"
+        "d d";
+        grid-template-columns: repeat(2,700px);
+    }
+    #main>nav{
+        grid-area: a;
+    }
+    #main>section{
+        grid-area: b;
+    }
+    #main>form{
+        grid-area: c;
+    }
+    #main>footer{
+        grid-area: d;
+    }
+    a{
+        color: ghostwhite;
+        text-decoration: none;
+        margin-left: 40px;
+    }
+    #navinput{
+        border-radius: 30px;
+        height: 20px;
+        width: 200px;
+    }
+    nav{
+        padding: 10px;
+        text-align: center;
+    }
+    #button{
+        background-color: blue;
+        color: ghostwhite;
+        border-radius: 30px;
+        width: fit-content;
+        padding: 10px;
+        margin: 10px;
+        position: relative;
+        left: 50px;
+    }
+    section{
+        position: relative;
+        left: 100px;
+        top: 100px;
+    }
+    form{
+        position: relative;
+        left: 200px;
+        top: 100px;
+        background-color: ghostwhite;
+        width: 400px;
+        height: 400px;
+        border-radius: 30px;
+    }
+    fieldset{
+        width: fit-content;
+        border-radius: 30px;
+        width: fit-content;
+        height: 300px;
+        border: none;
+        text-align: center;
+    }
+    #input{
+        margin: 10px;
+        padding: 5px;
+        width: 250px;
+        border-radius: 10px;
+        position: relative;
+        left: 50px;
+    }
+    h4,#a{
+        position: relative;
+        left: 50px;
+    }
+</style>
+</head>
+<body id="main">
+    <nav>
+        <a href="">Home</a>
+        <a href="">About Us</a>
+        <a href="">Service</a>
+        <a href="">Contact</a>
+        <a href=""><input type="text" id="navinput"></a>
+        <a href="">Sign In</a>
+        <a href="">Sign Up</a>
+    </nav>
+    <section>
+        <h2>Creative Agency</h2>
+        <h1>For Our Business</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus aspernatur quia corrupti obcaecati cum, quod debitis quaerat adipisci, accusantium quisquam illum quos iusto repellat quibusdam doloremque laboriosam et, explicabo assumenda!</p>
+        <button id="button">
+            <a href="">Our Service</a>
+        </button>
+    </section>
+    <form >
+        <fieldset>
+            <h4>REGISTER FOR FREE</h4>
+            <div ><input type="text" placeholder="Full Name" id="input"></div>
+            <div ><input type="mail" placeholder="Email Address" id="input"></div>
+            <div ><input type="text" placeholder="User Name" id="input"></div>
+            <div ><input type="password" placeholder="Password" id="input"></div>
+            <button id="button">
+                <a href="">START NOW</a>
+            </button>
+            <p id="a">Lorem ipsum dolor sit amet consectetur.</p>
+        </fieldset>
+    </form>
+    <footer></footer>
+    
+</body>
+</html>
